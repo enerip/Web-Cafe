@@ -1,0 +1,17 @@
+/* Hay que acordarse de matar estos css antes de entregar <3 */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-light: #FFF4E2;
+    --clr-dark: #3C291B;
+    --clr-secondary: #C49279;
+    --clr-accent: #BED4F9;
+    --hover-accent: #80A4E1;
+    --font-title: "Bebas Neue", serif;
+    --font-body: "Raleway", serif;
+}
