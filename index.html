@@ -26,6 +26,10 @@
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- FLICKITY CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+            
+
 
 </head>
 
@@ -40,29 +44,32 @@
 
     <header>
       <div id="titles">
-
+        <!-- <h1>WELCOME TO AROMA CAFÉ</h1>
+        <p>Your cozy spot for specialty coffee, freshly baked treats, and a warm community vibe.</p>
+        <a href="#funFacts" class="button-header">BROWSE WHAT WE OFFER</a> -->
       </div>
 
       <div class="navContainer">
         <nav id="menu">
           <div class="logo">
-            <a href="#"><img src="media/img/logo_blanco.png" alt=""></a>
+            <a href="#"><img id="logo-light" src="media/img/logo-blanco.png" alt=""></a>
+            <a href="#"><img id="logo-dark" src="media/img/logo-marron.png" alt="" style="display: none;"></a>
           </div>
 
           <div class="navMenu"> 
             <i class="bi bi-list"></i>
             <ul>
               <li>
-                <a href="#">ABOUT US</a>
+                <a href="about.html">ABOUT US</a>
               </li>
               <li>
-                <a href="#">MENU</a>
+                <a href="menu.html">MENU</a>
               </li>
               <li>
-                <a href="#">CONTACT US</a>
+                <a href="contact.html">CONTACT US</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="faq.html">FAQ</a>
               </li>
               <li>
                 <i class="bi bi-x-lg"></i>
@@ -72,7 +79,7 @@
   
           <div class="themeSearch">
             <form class="d-flex align-items-center" id="search-form">
-              <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" aria-label="Search" style="display: none; width: 0;">
+              <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" style="display: none; width: 0;">
               <button class="btn" id="search-icon" type="button">
                 <i class="bi bi-search" style="font-size: 1.5rem; color: var(--clr-light);"></i>
               </button>
@@ -87,21 +94,21 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <i class="bi bi-cup-hot-fill" style="font-size: 2.5rem; color: var(--clr-light);"></i>
+            <i class="bi bi-cup-hot-fill" style="font-size: 2.5rem; color: var(--clr-light-2);"></i>
             <div class="facts">
               <h3>SPECIALTY COFFEE</h3>
               <p>We proudly serve top-quality specialty coffee sourced from the best beans, paired with freshly baked pastries made daily.</p>
             </div>
           </div>
           <div class="col">
-            <i class="bi bi-book" style="font-size: 2.5rem; color: var(--clr-light);"></i>
+            <i class="bi bi-book" style="font-size: 2.5rem; color: var(--clr-light-2);"></i>
             <div class="facts">
               <h3>COMMUNITY</h3>
               <p>Our coffee shop is a cozy haven for everyone. We host regular events like book readings, art displays, and coffee tasting sessions to bring the community together.</p>
             </div>
           </div>
           <div class="col">
-            <i class="bi bi-wifi" style="font-size: 2.5rem; color: var(--clr-light);"></i>
+            <i class="bi bi-wifi" style="font-size: 2.5rem; color: var(--clr-light-2);"></i>
             <div class="facts">
               <h3>FREE WIFI</h3>
               <p>Enjoy complimentary high-speed WiFi while you sip on your favorite coffee. Perfect for working remotely, studying, or simply relaxing and catching up online.</p>
@@ -110,6 +117,128 @@
         </div>
       </div>
     </section>
+
+    <section id="bestSellers">
+      <h2>BEST SELLERS</h2>
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="card">
+              <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3>VANILLA MAPLE LATTE</h3>
+                <p class="card-text">Smooth and creamy latte made with our house espresso, steamed milk, vanilla syrup and a hint of maple.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3>ALMOND CROISSANT</h3>
+                <p class="card-text">Freshly baked flaky croissant filled with rich almond paste, topped with toasted almonds and powdered sugar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3>PUMPKIN SPICE MOCHA</h3>
+                <p class="card-text"> Our limited-time autumn delight that blends espresso, steamed milk, chocolate and a pumpkin spice mix.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="menu.html" class="button-1">VIEW FULL MENU</a>
+    </section>
+
+    <section id="signUp">
+      <h3>SIP, SAVOR AND STAY CONNECTED!</h3>
+      <p>Sign Up and discover exclusive perks and rewards.</p>
+      <div id="formsSU">
+        <form id="form-1">
+          <input type="email" class="form-control form-su" id="floatingInput" placeholder="Email">
+          <input type="password" class="form-control form-su" id="floatingPassword" placeholder="Password">
+        </form>
+        <button type="button" class="btn-su">JOIN NOW</button>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>OUR GALLERY</h2>
+      <div class="carousel" data-flickity='{ "groupCells": true, "wrapAround": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false, "pageDots": false }'>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="https://picsum.photos/200" alt="">
+        </div>
+      </div>
+    </section>  
+    
+    <section id="reservation">
+      <h2>TITLE</h2>
+      <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint dolores quia animi explicabo illo aspernatur labore vero officiis corrupti eveniet. Illum obcaecati voluptatem doloribus consequatur corporis. Cum voluptate accusamus sint.</p>
+        <button type="button" class="btn">RESERVE A TABLE</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <p>FAQS</p>
+            <p>TERMS & CONDITIONS</p>
+            <p>PRIVACY POLICY</p>
+            <p>LEGAL</p>
+          </div>
+          <div class="col">
+            <h4>WELCOME TO OUR COFFEE CORNER</h4>
+            <p>Do you want to be up to date with all the news and special events?</p>
+            <div class="nl">
+              <input type="email" class="form-control border-0 rounded-0 bg-transparent text-light" id="newsletterEmail" placeholder="Enter your email" aria-label="Email">
+              <i class="bi bi-envelope"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sm">
+        <div class="iconsSM">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-tiktok"></i>
+        </div>
+        <p>© 2024 Aroma Café by Ariana Asmat & Irene Pando</p>
+      </div>
+    </footer>
+
+    <!-- FLICKITY JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   
     <!-- JAVASCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
