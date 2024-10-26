@@ -7,8 +7,10 @@
 }
 
 :root {
-    --clr-light: #FFF4E2;
-    --clr-dark: #3C291B;
+    --clr-light: #FFF4E3;
+    --clr-dark: #3C291C;
+    --clr-light-2: #FFF4E2;
+    --clr-dark-2: #3C291B;
     --clr-secondary: #C49279;
     --clr-accent: #BED4F9;
     --hover-accent: #80A4E1;
@@ -16,3 +18,46 @@
     --font-body: "Raleway", serif;
     --buttons-corner: 50px;
 }
+
+#carta-header {
+    background-image: url("../media/img/menu-fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 14em;
+    background-color: #3C291C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+#carta-header h1{
+    color: var(--clr-light-2);
+}
+
+#carta-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#carta-nav a {
+    text-decoration: none;
+    color: var(--clr-light-2);
+    height: 100%;
+    padding: 0 0.6em;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+#carta-nav h4 {
+    color: var(--clr-light-2);
+    height: 100%;
+    padding: 0 0.6em;
+    margin: 0;
+}
+
+
+
