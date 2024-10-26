@@ -59,5 +59,145 @@
     margin: 0;
 }
 
+#cofee {
+    margin: 3em 9em 0 9em;
+}
+
+
+.row {
+    --bs-gutter-x: 1.8em;
+}
+
+.carta-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--font-body);
+}
+
+.carta-titulo h2 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 2.5em;
+    white-space: nowrap;
+    color: var(--clr-dark);
+}
+
+.carta-titulo > div {
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-dark);
+    margin-left: 1em;
+}
+
+#cofee div {
+    color: var(--clr-dark);
+}
+
+.comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carta-img  {
+    height: 10em;
+    width: 10em;
+    margin-top: 2em;
+}
+
+.carta-img img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    transition: 1s;
+    padding: 0.5em;
+}
+
+.carta-img img:hover {
+    rotate: -60deg;
+    padding: 0em;
+}
+
+.carta-precio {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-start;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.carta-precio h3 {
+    font-family: var(--font-body);
+    color: var(--clr-dark);
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.carta-precio h4 {
+    color: #80A4E1;
+    padding-left: 0.7em;
+    font-size: 1.2em;
+}
+
+.comida p {
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* -----DRINKS----- */
+
+#drinks {
+    background-color: var(--clr-secondary);
+    padding: 3em 9em 3em 9em;
+    margin-top: 3em;
+}
+
+#drinks.carta-titulo  {
+    color: var(--clr-dark-2);
+}
+
+#drinks .carta-titulo > div {
+    background-color: var(--clr-dark-2);
+}
+
+#drinks .comida h4 {
+    color: white;
+}
+
+#drinks .row {
+    --bs-gutter-x: 3em;
+}
+
+#drinks h3, h4 {
+    margin: 0;
+}
+
+/* -----PASTRIES----- */
+
+#pastries {
+    margin: 3em 9em 0 9em;
+}
+
+#tyb {
+    margin: 3em 9em 0 9em;
+}
+
+#tyb .row {
+    --bs-gutter-x: 4em;
+}
+
+#tyb p {
+ text-align: left;
+}
+
+#tyb h3, h4 {
+    margin: 0;
+}
+
+
+
 
 
