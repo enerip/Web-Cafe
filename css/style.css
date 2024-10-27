@@ -41,8 +41,7 @@ section {
     margin: 0 auto;
 }
 
-/* HOME PAGE */
-
+/* -----HOME PAGE----- */
 #carga {
     width: 100%;
     height: 100vh;
@@ -136,7 +135,7 @@ header {
     background-color: var(--clr-secondary);
 }
 
-/* MENU */
+/* -----MENU----- */
 .navContainer {
     width: 100%;
     display: flex;
@@ -236,7 +235,7 @@ header {
     border: none;
 }
 
-/* FACTS SECTION */
+/* -----FACTS SECTION----- */
 #funFacts {
     width: 100%;
     height: 30vh;
@@ -280,7 +279,7 @@ header {
     font-size: 0.8em;
 }
 
-/* BEST SELLERS SECTION */
+/* -----BEST SELLERS SECTION----- */
 #bestSellers {
     padding: 5em 0;
     display: flex;
@@ -325,7 +324,7 @@ header {
     color: var(--clr-light-2);
 }
 
-/* SIGN UP SECTION */
+/* -----SIGN UP SECTION----- */
 #signUp {
     width: 100%;
     height: 38vh;
@@ -389,7 +388,7 @@ input.form-su:focus{
     height: 28%;
 }
 
-/* GALLERY SECTION */
+/* -----GALLERY SECTION----- */
 #gallery {
     display: flex;
     flex-direction: column;
@@ -425,12 +424,42 @@ input.form-su:focus{
     color: var(--clr-light-2);
 }
 
-/* FOOTER */
+/* -----FOOTER----- */
 footer {
     display: flex;
     flex-direction: column;
     background-color: var(--clr-dark);
     align-items: center;
-    padding: 1.2em;
+    padding: 2em;
+    color: var(--clr-light);
 }
 
+.terms p,
+#sm p {
+    margin-bottom: 0.5em !important;
+    font-size: 0.9em;
+}
+
+.nl-text p {
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+}
+
+.nl-text p:first-child {
+    font-weight: 600;
+}
+
+.nl {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-nl {
+    transition: width 0.3s ease;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--clr-light); 
+    padding: 5px; 
+    outline: none; 
+    color: var(--clr-light) !important;
+}
