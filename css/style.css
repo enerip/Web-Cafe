@@ -398,7 +398,7 @@ header {
 #gallery {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 #gallery h2 {
@@ -430,6 +430,54 @@ header {
     color: var(--clr-light-2);
 }
 
+/* -----RESERVATION SECTION----- */
+#reservation{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
+
+#reservation h2 {
+    font-size: 4.5em;
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--clr-dark);
+    margin-bottom: 0.2em;
+}
+
+#reservation .title-2 {
+    text-align: right;
+}
+
+.reserve {
+    margin-top: 1.5em;
+}
+
+.reserve-text {
+    color: var(--clr-dark);
+    font-weight: 400;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-reserve {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border-radius: var(--buttons-corner);
+    width: 50%;
+    border: none;
+    height: 30%;
+    font-weight: 600;
+}
+
+.btn-reserve:hover {
+    background-color: var(--clr-secondary);
+}
+
 /* -----FOOTER----- */
 footer {
     display: flex;
@@ -451,6 +499,10 @@ footer {
     text-decoration: underline;
 }
 
+.terms {
+    padding: 2rem;
+}
+
 .nl-text p {
     margin-bottom: 1.5em;
     font-size: 0.9em;
@@ -460,16 +512,34 @@ footer {
     font-weight: 600;
 }
 
+.nl-text {
+    color: var(--clr-light);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nl-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 60%; 
+    width: 1px;
+    background-color: var(--clr-light);
+}
+
 .nl {
     display: flex;
     flex-direction: row;
+    border-bottom: 2px solid var(--clr-light); 
+    border-radius: 8px;
 }
 
 .form-nl {
     transition: width 0.3s ease;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid var(--clr-light); 
     padding: 5px; 
     outline: none; 
     color: var(--clr-light) !important;
@@ -477,6 +547,7 @@ footer {
 
 .form-nl::placeholder {
     color: var(--clr-light);
+    opacity: 0.7;
 }
 
 .form-nl:focus {
