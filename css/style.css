@@ -310,7 +310,7 @@ header {
     border-radius: var(--buttons-corner);
     padding: 0.6em 4em;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.9em;
     margin-top: 4em;
     width: 30%;
@@ -373,7 +373,7 @@ header {
     color: var(--clr-light-2);
 }
 
-input.form-su:focus{
+.form-su:focus{
     background-color: transparent;
     outline: none;
 }
@@ -386,6 +386,12 @@ input.form-su:focus{
     border: none;
     margin-left: 3em;
     height: 28%;
+    font-weight: 600;
+}
+
+.btn-su:hover {
+    background-color: var(--clr-dark-2);
+    color: var(--clr-light-2);
 }
 
 /* -----GALLERY SECTION----- */
@@ -440,6 +446,11 @@ footer {
     font-size: 0.9em;
 }
 
+.terms p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .nl-text p {
     margin-bottom: 1.5em;
     font-size: 0.9em;
@@ -462,4 +473,28 @@ footer {
     padding: 5px; 
     outline: none; 
     color: var(--clr-light) !important;
+}
+
+.form-nl::placeholder {
+    color: var(--clr-light);
+}
+
+.form-nl:focus {
+    background-color: transparent;
+}
+
+#sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sm p {
+    margin-top: 0.8em;
+}
+
+.iconsSM i:hover {
+    cursor: pointer;
+    color: var(--clr-accent) !important;
 }
