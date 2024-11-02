@@ -431,44 +431,22 @@ header {
 }
 
 /* -----RESERVATION SECTION----- */
-#reservation{
-    display: flex;
-    flex-direction: column;
-    padding: 4em;
-}
-
 #reservation h2 {
     font-size: 4.5em;
     font-family: var(--font-body);
     font-weight: 600;
     color: var(--clr-dark);
-    margin-bottom: 0.2em;
-}
-
-#reservation .title-2 {
-    text-align: right;
-}
-
-.reserve {
-    margin-top: 1.5em;
 }
 
 .reserve-text {
     color: var(--clr-dark);
-    font-weight: 400;
-}
-
-.btn-cont {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    font-weight: 500;
 }
 
 .btn-reserve {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     border-radius: var(--buttons-corner);
-    width: 50%;
     border: none;
     height: 30%;
     font-weight: 600;
@@ -480,17 +458,13 @@ header {
 
 /* -----FOOTER----- */
 footer {
-    display: flex;
-    flex-direction: column;
     background-color: var(--clr-dark);
-    align-items: center;
-    padding: 2em;
     color: var(--clr-light);
 }
 
 .terms p,
+.nl-text p,
 #sm p {
-    margin-bottom: 0.5em !important;
     font-size: 0.9em;
 }
 
@@ -499,25 +473,12 @@ footer {
     text-decoration: underline;
 }
 
-.terms {
-    padding: 2rem;
-}
-
-.nl-text p {
-    margin-bottom: 1.5em;
-    font-size: 0.9em;
-}
-
 .nl-text p:first-child {
     font-weight: 600;
 }
 
 .nl-text {
     color: var(--clr-light);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .nl-text::before {
@@ -530,8 +491,6 @@ footer {
 }
 
 .nl {
-    display: flex;
-    flex-direction: row;
     border-bottom: 2px solid var(--clr-light); 
     border-radius: 8px;
 }
@@ -552,17 +511,6 @@ footer {
 
 .form-nl:focus {
     background-color: transparent;
-}
-
-#sm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#sm p {
-    margin-top: 0.8em;
 }
 
 .iconsSM i:hover {
