@@ -21,16 +21,12 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
 
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- FLICKITY CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-            
-
-
 </head>
 
 <body>
@@ -124,7 +120,7 @@
         <div class="row justify-content-center">
           <div class="col">
             <div class="card">
-              <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+              <img src="media/img/home/vanilla_latte.jpg" class="card-img-top" alt="...">
               <div class="card-body p-4">
                 <h3 class="fs-2">VANILLA MAPLE LATTE</h3>
                 <p class="card-text">Smooth and creamy latte made with our house espresso, steamed milk, vanilla syrup and a hint of maple.</p>
@@ -133,7 +129,7 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+              <img src="media/img/home/almond_croissant.jpg" class="card-img-top" alt="...">
               <div class="card-body p-4">
                 <h3 class="fs-2">ALMOND CROISSANT</h3>
                 <p class="card-text">Freshly baked flaky croissant filled with rich almond paste, topped with toasted almonds and powdered sugar.</p>
@@ -142,7 +138,7 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+              <img src="media/img/home/pumpkin_spice.jpg" class="card-img-top" alt="...">
               <div class="card-body p-4">
                 <h3 class="fs-2">PUMPKIN SPICE MOCHA</h3>
                 <p class="card-text"> Our limited-time autumn delight that blends espresso, steamed milk, chocolate and a pumpkin spice mix.</p>
@@ -151,7 +147,7 @@
           </div>
         </div>
       </div>
-      <a href="menu.html" class="button-1 px-5 py-2 text-center mt-5">VIEW FULL MENU</a>
+      <a href="menu.html" class="btn btn-blue w-50 px-5 py-2 text-center mt-5">VIEW FULL MENU</a>
     </section>
 
     <section id="signUp" class="w-100 d-flex flex-column justify-content-center align-items-center">
@@ -159,7 +155,7 @@
       <p class="fs-5 mb-4">Sign Up and discover exclusive perks and rewards.</p>
       <div id="formsSU" class="w-100 d-flex flex-row justify-content-center align-items-center">
         <form id="form-1">
-          <input type="email" class="form-control form-su" id="floatingInput" placeholder="Email">
+          <input type="email" class="form-control form-su" id="floatingEmail" placeholder="Email">
           <input type="password" class="form-control form-su" id="floatingPassword" placeholder="Password">
         </form>
         <button type="button" class="btn-su ms-5">JOIN NOW</button>
@@ -168,33 +164,27 @@
 
     <section id="gallery" class="d-flex flex-column py-5">
       <h2 class="text-center pb-4">OUR GALLERY</h2>
-      <div class="carousel mb-4" data-flickity='{ "groupCells": true, "wrapAround": true, "autoPlay": 4000, "pauseAutoPlayOnHover": false, "pageDots": false }'>
+      <div class="carousel mb-4" data-flickity='{ "contain": true, "wrapAround": true, "autoPlay": 3000, "pauseAutoPlayOnHover": false, "pageDots": false, "cellAlign": "center" }'>
         <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="media/img/home/carrusel-1.jpg" alt="">
         </div>
         <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="media/img/home/carrusel-2.jpg" alt="">
         </div>
         <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="media/img/home/carrusel-3.jpg" alt="">
         </div>
         <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="media/img/home/carrusel-4.jpg" alt="">
         </div>
         <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="media/img/home/carrusel-5.jpg" alt="">
         </div>
         <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="media/img/home/carrusel-6.jpg" alt="">
         </div>
         <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
-        </div>
-        <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
-        </div>
-        <div class="carousel-cell">
-          <img src="https://picsum.photos/200" alt="">
+          <img src="media/img/home/carrusel-7.jpg" alt="">
         </div>
       </div>
     </section>  
@@ -228,7 +218,7 @@
               <form>
                 <div class="row mb-3">
                   <div class="col-md-6">
-                    <input type="text" class="form-control form-booking" id="name" placeholder="Name" required>
+                    <input type="text" class="form-control form-booking" id="name-booking" placeholder="Name" required>
                   </div>
                   <div class="col-md-6">
                     <input type="text" class="form-control form-booking" id="surname" placeholder="Surname" required>
@@ -240,7 +230,7 @@
                 </div>
       
                 <div class="mb-3">
-                  <input type="email" class="form-control form-booking" id="email" placeholder="Email" required>
+                  <input type="email" class="form-control form-booking" id="email-booking" placeholder="Email" required>
                 </div>
       
                 <div class="mb-3">
@@ -265,7 +255,7 @@
                   </div>
                 </div>
       
-                <button type="submit" class="btn btn-book w-100 mt-4">BOOK NOW</button>
+                <button type="submit" class="btn btn-blue w-100 mt-4">BOOK NOW</button>
               </form>
             </div>
           </div>
@@ -275,7 +265,7 @@
     </section>
 
     <footer class="d-flex flex-column align-items-center p-4">
-      <div class="container">
+      <div class="container w-75">
         <div class="row">
           <div class="col-8 terms py-4 px-0">
             <p class="mb-2">FAQS</p>

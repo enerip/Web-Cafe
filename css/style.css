@@ -223,7 +223,10 @@ header {
 }
 
 #search-input::placeholder {
-    color: var(--clr-light); 
+    color: var(--clr-light);
+    opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
 }
   
 #search-form {
@@ -265,22 +268,6 @@ header {
     background-color: var(--clr-accent);
 }
 
-.button-1 {
-    color: var(--clr-dark-2);
-    background-color: var(--clr-accent);
-    border-radius: var(--buttons-corner);
-    font-weight: 600;
-    font-size: 0.9em;
-    width: 35%;
-    text-decoration: none;
-}
-
-.button-1:hover {
-    background-color: #799cda;
-    cursor: pointer;
-    color: var(--clr-light-2);
-}
-
 /* -----SIGN UP SECTION----- */
 #signUp {
     height: 38vh;
@@ -312,6 +299,8 @@ header {
 .form-su::placeholder {
     color: var(--clr-light-2);
     opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
 }
 
 .form-su:focus{
@@ -394,19 +383,23 @@ header {
 .form-booking {
     background-color: transparent;
     border: solid 1.5px var(--clr-light-2);
+    color: var(--clr-light-2);
 }
 
 .form-booking::placeholder,
 #time{
     color: var(--clr-light-2);
     opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
 }
 
 .form-booking:focus {
     background-color: transparent;
+    color: var(--clr-light-2);
 }
 
-.btn-book {
+.btn-blue {
     background-color: var(--clr-accent);
     color: var(--clr-dark-2);
     font-weight: 600;
@@ -414,8 +407,9 @@ header {
     border-radius: var(--buttons-corner) !important;
 }
 
-.btn-book:hover {
+.btn-blue:hover {
     background-color: var(--hover-accent);
+    color: var(--clr-light-2);
 }
 
 /* -----FOOTER----- */
@@ -458,7 +452,6 @@ footer {
 }
 
 .form-nl {
-    transition: width 0.3s ease;
     background-color: transparent;
     border: none;
     padding: 5px; 
@@ -469,6 +462,8 @@ footer {
 .form-nl::placeholder {
     color: var(--clr-light);
     opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
 }
 
 .form-nl:focus {
@@ -479,3 +474,35 @@ footer {
     cursor: pointer;
     color: var(--clr-accent) !important;
 }
+
+/* -------ABOUT PAGE CSS------- */
+
+/* -------MENU PAGE CSS------- */
+
+/* -------CONTACT PAGE CSS------- */
+#contact h2 {
+    font-size: 5em;
+    color: var(--clr-dark);
+}
+
+.form-contact {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px var(--clr-dark);
+    padding: 5px; 
+    color: var(--clr-dark) !important;
+}
+
+.form-contact::placeholder {
+    color: var(--clr-dark);
+    opacity: 0.8;
+    font-family: var(--font-body);
+    font-size: 0.8em;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* -------FAQ PAGE CSS------- */
