@@ -19,7 +19,7 @@
 
     <!-- CUSTOM CSS -->
      <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/menu.css">
+    <!--  <link rel="stylesheet" href="css/menu.css"> -->
 
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -29,10 +29,10 @@
 
 <body>
     <section id="carta">
-        <div id="carta-header">
+        <div id="carta-header" class="d-flex flex-column align-items-center justify-content-center">
             <h1>OUR MENU</h1>
-            <div id="carta-nav">
-                <a href="#cofee">COFFEE</a>
+            <div id="carta-nav" class="d-flex flex-row align-items-center justify-content-center w-100">
+                <a href="#coffee">COFFEE</a>
                 <h4>|</h4>
                 <a href="#drinks">DRINKS</a>
                 <h4>|</h4>
@@ -42,15 +42,15 @@
                 <h4>|</h4>
                 <a href="#brunch">BRUNCH</a>
             </div>
-
         </div>
-        <div id="cofee">
+
+        <div id="coffee">
             <div class="container text-center">
-                <div class="carta-titulo">
-                    <h2>Cofee</h2>
-                    <div></div>
+                <div class="carta-titulo d-flex flex-row align-items-center">
+                    <h2 class="fs-1">Coffee</h2>
+                    <div class="w-100 ms-3"></div>
                 </div>
-                <div class="row">
+                <div class="row row-menu">
                     <div class="col-md-3 col-sm-4 comida">
                         <div class="carta-img">
                             <img src="media/img/menu/latte.png" alt="">
@@ -96,7 +96,7 @@
                             <img src="media/img/menu/frapuccino.png" alt="">
                         </div>
                         <div class="carta-precio">
-                            <h3>FRAPUCCINO</h3>
+                            <h3>FRAPPUCCINO</h3>
                             <h4><i>/ 5.50€</i></h4>
                         </div>
                         <p>Cold, blended coffee drink with flavors, ice, and whipped cream. Refreshingly sweet and satisfying.</p>
@@ -126,7 +126,7 @@
                             <img src="media/img/menu/vanilla.png" alt="">
                         </div>
                         <div class="carta-precio">
-                            <h3>VANILLATTE</h3>
+                            <h3>VANILLA LATTE</h3>
                             <h4><i>/ 5.50€</i></h4>
                         </div>
                         <p>Our creamy latte infused with vanilla syrup, offering a sweet and comforting flavor.</p>
@@ -137,11 +137,11 @@
 
         <div id="drinks">
             <div class="container text-center">
-                <div class="carta-titulo">
-                    <h2>Drinks</h2>
-                    <div></div>
+                <div class="carta-titulo d-flex flex-row align-items-center">
+                    <h2 class="fs-1">Drinks</h2>
+                    <div class="w-100 ms-3"></div>
                 </div>
-                <div class="row">
+                <div class="row row-menu">
                     <div class="col-md-6 comida">
                         <div class="carta-precio">
                             <h3>CHAI TEA</h3>
@@ -190,11 +190,11 @@
 
         <div id="pastries">
             <div class="container text-center">
-                <div class="carta-titulo">
-                    <h2>Pastries</h2>
-                    <div></div>
+                <div class="carta-titulo d-flex flex-row align-items-center">
+                    <h2 class="fs-1">Pastries</h2>
+                    <div class="w-100 ms-3"></div>
                 </div>
-                <div class="row">
+                <div class="row row-menu">
                     <div class="col-md-3 col-sm-4 comida">
                         <div class="carta-img">
                             <img src="media/img/menu/croissant.png" alt="">
@@ -271,11 +271,11 @@
 
         <div id="tyb">
             <div class="container text-center">
-                <div class="row">
+                <div class="row row-menu">
                     <div class="col-md-6" id="toasts">
-                        <div class="carta-titulo">
-                            <h2>Toasts</h2>
-                            <div></div>
+                        <div class="carta-titulo d-flex flex-row align-items-center">
+                            <h2 class="fs-1">Toasts</h2>
+                            <div class="w-100 ms-3"></div>
                         </div>
                         <div class="carta-precio">
                             <h3>AVOCADO TOAST</h3>
@@ -298,10 +298,11 @@
                         </div>
                         <p>Cream cheese spread on rye toast, topped with smoked salmon, capers, red onion slices, and a squeeze of lemon juice.</p>
                     </div>
+
                     <div class="col-md-6" id="brunch">
-                        <div class="carta-titulo">
-                            <h2>Brunch</h2>
-                            <div></div>
+                        <div class="carta-titulo d-flex flex-row align-items-center">
+                            <h2 class="fs-1">Brunch</h2>
+                            <div class="w-100 ms-3"></div>
                         </div>
                         <div class="carta-precio">
                             <h3>EGGS BENEDICT</h3>

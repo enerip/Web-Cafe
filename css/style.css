@@ -91,6 +91,7 @@ section {
     }
 }
 
+/* -----HEADER----- */
 header {
     height: 100vh;
     width: 100%;
@@ -476,8 +477,211 @@ footer {
 }
 
 /* -------ABOUT PAGE CSS------- */
+#about {
+    height: 100vh;
+    color: var(--clr-dark);
+}
+
+#about .about-img {
+    width: 30%;
+}
+
+/* #about .about-img > img {
+    width: 100%;
+    height: auto;
+} */
+
+/* #about-img {
+    width: 100%;
+    height: auto;
+} */
+
+#about .about-up {
+    padding-bottom: 8em;
+}
+#about .about-down {
+    padding-top: 8em;
+}
+
+#about .about-centro {
+    width: 40%;
+}
+
+#about h1 {
+    font-size: 6em;
+}
+
+#about h2 {
+    font-family: "Italiana", sans-serif;
+}
 
 /* -------MENU PAGE CSS------- */
+#carta-header {
+    background-image: url("../media/img/menu-fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 14em;
+    background-color: #3C291C;
+   }
+#carta-header h1{
+    color: var(--clr-light-2);
+}
+
+#carta-nav {
+    flex-wrap: wrap;
+}
+
+#carta-nav a {
+    text-decoration: none;
+    color: var(--clr-light-2);
+    padding: 0 0.6em;
+    font-weight: 600;
+}
+
+#carta-nav h4 {
+    color: var(--clr-light-2);
+    padding: 0 0.6em;
+    margin: 0;
+}
+
+#coffee {
+    margin: 3em 9em 0 9em;
+}
+
+.row-menu {
+    --bs-gutter-x: 1.8em;
+}
+
+.carta-titulo {
+    color: var(--clr-dark);
+}
+
+.carta-titulo h2 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--clr-dark);
+}
+
+.carta-titulo > div {
+    height: 2px;
+    background-color: var(--clr-dark);
+}
+
+#coffee div {
+    color: var(--clr-dark);
+}
+
+.comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carta-img  {
+    height: 10em;
+    width: 10em;
+    margin-top: 2em;
+}
+
+.carta-img img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    transition: 1s;
+    padding: 0.5em;
+}
+
+.carta-img img:hover {
+    rotate: -60deg;
+    padding: 0em;
+}
+
+.carta-precio {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-start;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.carta-precio h3 {
+    font-family: var(--font-body);
+    color: var(--clr-dark);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.carta-precio h4 {
+    color: #80A4E1;
+    padding-left: 0.7em;padding-left: 0.7em;
+    font-size: 1.2em;
+}
+
+#cofee .carta-precio h4 {
+    margin-bottom: 8px;
+}
+#pastries .carta-precio h4 {
+    margin-bottom: 8px;
+}
+
+.comida p {
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* -----DRINKS----- */
+
+#drinks {
+    background-color: var(--clr-secondary);
+    padding: 3em 9em 3em 9em;
+    margin-top: 3em;
+}
+
+#drinks.carta-titulo  {
+    color: var(--clr-dark-2);
+}
+
+#drinks .carta-titulo > div {
+    background-color: var(--clr-dark-2);
+}
+
+#drinks .comida h4 {
+    color: white;
+}
+
+#drinks .row {
+    --bs-gutter-x: 3em;
+}
+
+#drinks h3, h4 {
+    margin: 0;
+}
+
+/* -----PASTRIES----- */
+
+#pastries {
+    margin: 3em 9em 0 9em;
+}
+
+#tyb {
+    margin: 3em 9em 0 9em;
+}
+
+#tyb .row {
+    --bs-gutter-x: 4em;
+}
+
+#tyb p {
+ text-align: left;
+}
+
+#tyb h3, h4 {
+    margin: 0;
+}
 
 /* -------CONTACT PAGE CSS------- */
 #contact h2 {
@@ -506,3 +710,5 @@ footer {
 }
 
 /* -------FAQ PAGE CSS------- */
+/* -------MEDIA QUERIES RESPONSIVE------- */
+
