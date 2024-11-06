@@ -104,10 +104,8 @@ header {
 }
 
 #titles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2em;
+    padding-left: 4em;
+    padding-top: 8em;
 }
 
 #titles h1 {
@@ -118,10 +116,11 @@ header {
 #titles p {
     padding: 0.5em 0;
     color: var(--clr-light-2);
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 .button-header {
-    width: fit-content;
     padding: 1em;
     background-color: var(--clr-light-2);
     color: var(--clr-dark-2);
@@ -130,6 +129,7 @@ header {
     margin-top: 1em;
     text-decoration: none;
     font-family: var(--font-body);
+    font-weight: 600;
 }
 
 .button-header:hover {
@@ -262,6 +262,19 @@ header {
 #bestSellers h2 {
     font-size: 5em;
     color: var(--clr-dark);
+}
+
+#bestSellers .card-best {
+    transition: transform 0.3s ease;
+}
+
+#bestSellers .card-best:hover {
+    transform: scale(1.05);
+}
+
+#bestSellers .card-best:not(:hover) {
+    transform: scale(0.9); 
+
 }
 
 #bestSellers .card-body {
@@ -526,6 +539,7 @@ footer {
    }
 #carta-header h1{
     color: var(--clr-light-2);
+    font-size: 5em;
 }
 
 #carta-nav {
@@ -573,16 +587,9 @@ footer {
     color: var(--clr-dark);
 }
 
-.comida {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .carta-img  {
     height: 10em;
     width: 10em;
-    margin-top: 2em;
 }
 
 .carta-img img {
@@ -598,14 +605,14 @@ footer {
     padding: 0em;
 }
 
-.carta-precio {
+/* .carta-precio {
     display: flex;
     flex-direction: row;
     align-items:center;
     justify-content:flex-start;
     width: 100%;
     margin-top: 1em;
-}
+} */
 
 .carta-precio h3 {
     font-family: var(--font-body);
@@ -615,20 +622,19 @@ footer {
 }
 
 .carta-precio h4 {
-    color: #80A4E1;
-    padding-left: 0.7em;padding-left: 0.7em;
+    color: var(--hover-accent);
+    padding-left: 0.7em;
     font-size: 1.2em;
 }
 
-#cofee .carta-precio h4 {
+/* #coffee .carta-precio h4 {
     margin-bottom: 8px;
 }
 #pastries .carta-precio h4 {
     margin-bottom: 8px;
-}
+} */
 
 .comida p {
-    text-align: left;
     font-size: 0.9em;
     font-weight: 500;
 }
@@ -638,7 +644,6 @@ footer {
 #drinks {
     background-color: var(--clr-secondary);
     padding: 3em 9em 3em 9em;
-    margin-top: 3em;
 }
 
 #drinks.carta-titulo  {
@@ -650,7 +655,7 @@ footer {
 }
 
 #drinks .comida h4 {
-    color: white;
+    color: var(--clr-light-2);
 }
 
 #drinks .row {
