@@ -416,9 +416,11 @@ header {
 .btn-blue {
     background-color: var(--clr-accent);
     color: var(--clr-dark-2);
+    font-size: 0.8em;
     font-weight: 600;
     font-family: var(--font-body);
     border-radius: var(--buttons-corner) !important;
+    padding: 0.4em 4em;
 }
 
 .btn-blue:hover {
@@ -583,7 +585,9 @@ footer {
     background-color: var(--clr-dark);
 }
 
-#coffee div {
+#coffee div,
+#pastries div,
+#tyb div {
     color: var(--clr-dark);
 }
 
@@ -605,15 +609,6 @@ footer {
     padding: 0em;
 }
 
-/* .carta-precio {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content:flex-start;
-    width: 100%;
-    margin-top: 1em;
-} */
-
 .carta-precio h3 {
     font-family: var(--font-body);
     color: var(--clr-dark);
@@ -627,20 +622,12 @@ footer {
     font-size: 1.2em;
 }
 
-/* #coffee .carta-precio h4 {
-    margin-bottom: 8px;
-}
-#pastries .carta-precio h4 {
-    margin-bottom: 8px;
-} */
-
 .comida p {
     font-size: 0.9em;
     font-weight: 500;
 }
 
 /* -----DRINKS----- */
-
 #drinks {
     background-color: var(--clr-secondary);
     padding: 3em 9em 3em 9em;
@@ -662,30 +649,17 @@ footer {
     --bs-gutter-x: 3em;
 }
 
-#drinks h3, h4 {
-    margin: 0;
-}
-
 /* -----PASTRIES----- */
-
 #pastries {
     margin: 3em 9em 0 9em;
 }
 
 #tyb {
-    margin: 3em 9em 0 9em;
+    margin: 3em 9em 3em 9em;
 }
 
 #tyb .row {
     --bs-gutter-x: 4em;
-}
-
-#tyb p {
- text-align: left;
-}
-
-#tyb h3, h4 {
-    margin: 0;
 }
 
 /* -------CONTACT PAGE CSS------- */
@@ -715,5 +689,48 @@ footer {
 }
 
 /* -------FAQ PAGE CSS------- */
+#faq {
+    padding: 5em 20em;
+}
+
+#faq-intro {
+    color: var(--clr-dark);
+    padding-bottom: 4em;
+}
+#faq-intro h1 {
+    font-size: 5em;
+}
+
+/* -----------ACCORDION----------- */
+.accordion-button {
+    background-color: var(--clr-light);
+    font-family: var(--font-body);
+    color: var(--clr-dark);
+    padding: 16px 20px 5px 2px;
+}
+.accordion-item button {
+    font-weight: 500;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--clr-dark);
+}
+
+.accordion-collapse {
+    background-color: var(--clr-light);
+    font-family: var(--font-body);
+    color: var(--clr-dark);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    box-shadow: none;
+}
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+}
 /* -------MEDIA QUERIES RESPONSIVE------- */
 

@@ -30,6 +30,46 @@
 </head>
 
 <body>
+      <div class="navContainer">
+        <nav id="menu">
+          <div class="logo">
+            <a href="#"><img id="logo-light" src="media/img/logo-blanco.png" alt=""></a>
+            <a href="#"><img id="logo-dark" src="media/img/logo-marron.png" alt="" style="display: none;"></a>
+          </div>
+
+          <div class="navMenu"> 
+            <i class="bi bi-list"></i>
+            <ul>
+              <li>
+                <a href="about.html">ABOUT US</a>
+              </li>
+              <li>
+                <a href="menu.html">MENU</a>
+              </li>
+              <li>
+                <a href="contact.html">CONTACT US</a>
+              </li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <i class="bi bi-x-lg"></i>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="themeSearch">
+            <form class="d-flex align-items-center" id="search-form">
+              <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" style="display: none; width: 0;">
+              <button class="btn" id="search-icon" type="button">
+                <i class="bi bi-search" style="font-size: 1.5rem; color: var(--clr-light);"></i>
+              </button>
+            </form>
+            <button id="theme-toggle"><i class="bi bi-sun-fill" style="font-size: 1.5rem; color: var(--clr-light);"></i></button>
+          </div>
+        </nav>
+      </div>
+
     <section id="about" class="d-flex flex-row align-items-center">
         <div class="about-img about-up">
             <img src="media/img/about-cafetera.png" alt="Cafetera chemex">
