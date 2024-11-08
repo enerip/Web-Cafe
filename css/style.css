@@ -43,22 +43,97 @@ section {
 
 /* -----HOME PAGE----- */
 #carga {
-    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FFF4E2;
+    background-color: var(--clr-dark-2);
     z-index: 1000;
     transition: 1s;
+}
+
+.cup {
+    position: relative;
+    width: 220px;
+    height: 180px;
+    border: 8px solid var(--clr-dark-2);
+    box-shadow: 0 0 0 12px var(--clr-light-2);
+    border-radius: 10px 10px 60px 75px;
+    background: url(../media/img/loader.png);
+    background-repeat: repeat-x;
+    background-position: 0 130px;
+    animation: filling 4s infinite;
+}
+
+@keyframes filling {
+    0%, 100% {
+        background-position: 0 130px;
+    }
+
+    50% {
+        background-position: 600px -70px;
+    }
+}
+
+.cup .steam {
+    position: absolute;
+    border-radius: 10px 2px;
+    width: 8px;
+    animation: steaming 2s infinite;
+}
+
+@keyframes steaming {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(.8px);
+        transform: translateY(-10px);
+    }
+}
+
+.cup .steam:nth-child(1) {
+    top: -70px;
+    left: 65px;
+    height: 30px;
+    background: #885c3d74;
+    animation-delay: .2s;
+}
+
+.cup .steam:nth-child(2) {
+    top: -120px;
+    left: 95px;
+    height: 50px;
+    background: #885c3d74;
+    animation-delay: .6s;
+}
+
+.cup .steam:nth-child(3) {
+    top: -90px;
+    left: 125px;
+    height: 40px;
+    background: #885c3d74;
+    animation-delay: 1s;
+}
+
+.cup .cup-handle {
+    position: absolute;
+    top: 10px;
+    right: -74px;
+    width: 65px;
+    height: 120px;
+    border: 12px solid var(--clr-light-2);
+    border-radius: 20px 10px 50px 20px;
 }
 
 #porcentaje {
     position: absolute;
     bottom: 1em;
     right: 1em;
-    font-size: 5vw;
-    color: #3C291B;
+    font-size: 4em;
+    color: var(--clr-light-2);
 }
 
 .bg-video {
@@ -109,12 +184,11 @@ header {
 }
 
 #titles h1 {
-    font-size: 6em;
+    font-size: 5em;
     color: var(--clr-light-2);
 }
 
 #titles p {
-    padding: 0.5em 0;
     color: var(--clr-light-2);
     font-size: 1.2em;
     font-weight: 500;
@@ -319,6 +393,8 @@ header {
 
 .form-su:focus{
     background-color: transparent;
+    font-family: var(--font-body);
+    color: var(--clr-light-2);
 }
 
 .btn-su {
@@ -413,6 +489,14 @@ header {
     color: var(--clr-light-2);
 }
 
+/* .btn-close {
+    --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 244, 226)'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e) !important;
+}
+
+.pruebaBtn {
+    color: var(--clr-light-2) !important;
+} */
+
 .btn-blue {
     background-color: var(--clr-accent);
     color: var(--clr-dark-2);
@@ -484,6 +568,8 @@ footer {
 
 .form-nl:focus {
     background-color: transparent;
+    font-family: var(--font-body);
+    color: var(--clr-light-2);
 }
 
 .iconsSM i:hover {
@@ -500,16 +586,6 @@ footer {
 #about .about-img {
     width: 30%;
 }
-
-/* #about .about-img > img {
-    width: 100%;
-    height: auto;
-} */
-
-/* #about-img {
-    width: 100%;
-    height: auto;
-} */
 
 #about .about-up {
     padding-bottom: 8em;
@@ -553,6 +629,10 @@ footer {
     color: var(--clr-light-2);
     padding: 0 0.6em;
     font-weight: 600;
+}
+
+#carta-nav a:hover {
+    color: var(--clr-accent);
 }
 
 #carta-nav h4 {
@@ -701,7 +781,15 @@ footer {
     font-size: 5em;
 }
 
-/* -----------ACCORDION----------- */
+.here-link {
+    color: var(--clr-accent);
+}
+
+.here-link:hover {
+    color: var(--hover-accent);
+}
+
+/* -----ACCORDION----- */
 .accordion-button {
     background-color: var(--clr-light);
     font-family: var(--font-body);
