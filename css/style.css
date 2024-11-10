@@ -17,13 +17,21 @@
     --buttons-corner: 50px;
 }
 
-/* ACCORDION ICON COLOR */
+/* BOOTSTRAP ICONS COLOR */
 .dark .accordion-button {
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 15' fill='none' stroke='%23fff4e2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e") !important;
 }
 
 .dark .accordion-button:not(.collapsed)::after {
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 15' fill='none' stroke='%23fff4e2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e") !important;
+}
+
+.btn-close {
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff4e2' %3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") !important;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff4e2' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
 }
 
 img {
@@ -189,7 +197,7 @@ header {
 
 #titles {
     padding-left: 4em;
-    padding-top: 8em;
+    padding-top: 10em;
 }
 
 #titles h1 {
@@ -222,28 +230,27 @@ header {
 /* -----MENU----- */
 .navContainer {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
     z-index: 999;
+    background-color: var(--clr-dark);
 }
 
-#menu {
-    width: 100%;
-    height: 4em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    background: var(--clr-dark);
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff4e2' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
-.logo {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+.dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%233c291b' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 #logo-light,
@@ -251,44 +258,26 @@ header {
     height: 2.5em;
 }
 
+.navbar-brand {
+    margin-right: 0 !important;
+}
+
 .navMenu {
     padding: 0.5em 1em;
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
 }
 
-.navMenu > i,
-.navMenu > ul > li:last-child {
-    display: none;
-}
-
-.navMenu ul {
-    width: 24em;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0 !important;
-}
-
-#menu .navMenu ul li {
-    list-style: none;
-}
-
-#menu .navMenu ul li a {
-    text-decoration: none;
+.navMenu li a {
+    color: var(--clr-light);
     font-family: var(--font-body);
     font-weight: 600;
+    margin: 0 0.5em;
 }
 
-#menu .navMenu ul li a:hover {
+.navMenu li a:hover {
     color: var(--clr-secondary);
-}
-
-#menu .navMenu > i,
-#menu .navMenu > ul > li > a {
-    color: var(--clr-light);
 }
 
 .themeSearch {
@@ -320,6 +309,7 @@ header {
 #theme-toggle {
     background-color: transparent;
     border: none;
+    margin-left: 0.5em;
 }
 
 /* -----FACTS SECTION----- */
@@ -417,12 +407,14 @@ header {
     counter-increment: carousel-cell;
 }
 
-.flickity-prev-next-button .arrow {
-    fill: var(--clr-dark-2);
+.flickity-prev-next-button.next,
+.flickity-prev-next-button.previous {
+    background-color: var(--clr-accent) !important;
+    opacity: 0.9 !important;
 }
 
-.flickity-prev-next-button.no-svg {
-    color: var(--clr-light-2);
+.flickity-prev-next-button .arrow {
+    fill: var(--clr-light-2) !important;
 }
 
 /* -----RESERVATION SECTION----- */
@@ -480,14 +472,6 @@ header {
     background-color: transparent;
     color: var(--clr-light-2);
 }
-
-/* .btn-close {
-    --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(255, 244, 226)'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e) !important;
-}
-
-.pruebaBtn {
-    color: var(--clr-light-2) !important;
-} */
 
 .btn-blue {
     background-color: var(--clr-accent);
@@ -571,6 +555,7 @@ footer {
 
 /* -------ABOUT PAGE CSS------- */
 #about {
+    margin-top: 4.5em;
     height: 100vh;
     color: var(--clr-dark);
 }
@@ -599,6 +584,10 @@ footer {
 }
 
 /* -------MENU PAGE CSS------- */
+#carta {
+    padding-top: 4.5em;
+}
+
 #carta-header {
     background-image: url("../media/img/menu-fondo.jpg");
     background-position: center;
@@ -740,6 +729,10 @@ footer {
 }
 
 /* -------CONTACT PAGE CSS------- */
+#contact {
+    padding-top: 4.5em;
+}
+
 #contact h2 {
     font-size: 4.5em;
     color: var(--clr-dark);
@@ -768,6 +761,7 @@ footer {
 /* -------FAQ PAGE CSS------- */
 #faq {
     padding: 5em 20em;
+    margin-top: 4.5em;
 }
 
 #faq-intro {
@@ -843,6 +837,10 @@ footer {
     .reserve-text {
         font-size: 0.8em;
     }
+
+    footer .container {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -915,6 +913,25 @@ footer {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .navMenu li a {
+        margin: 0.5em 0;
+    }
+
+    #reservation {
+        width: 100% !important;
+    }
+
+    .btn-reserve {
+        width: 100% !important;
+    }
+
+    #reservation .container,
+    footer .container {
+        max-width: 100% !important;
+    }
+}
+
 @media screen and (max-width: 920px) {
     .about-centro p {
         font-size: 0.8em;
@@ -925,18 +942,23 @@ footer {
         width: 8.5em;
         margin-top: 2em;
     }
+
     #coffee {
         margin: 3em 0em 0 0em;
     }
+
     #pastries {
         margin: 3em 0em 0 0em;
     }
+
     #drinks {
         padding: 3em 0em 3em 0em;
     }
+
     #tyb {
         margin: 3em 0em 3em 0em;
     }
+
     .row-menu h3, h4 {
         white-space: nowrap;
     }
@@ -945,7 +967,7 @@ footer {
         font-size: 1rem !important;
     }
 
-     #contact .form-cont {
+    #contact .form-cont {
         padding: 2rem 2rem 2rem 0 !important;
     }
 
@@ -1022,18 +1044,54 @@ footer {
         margin-top: 1.2em;
     }
 
-    #reservation .container,
-    footer .container {
-        max-width: 100% !important;
+    #reservation h2 {
+        font-size: 2.5em;
     }
 
-    .btn-reserve {
-        width: 100% !important;
+    .reserve {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reserve-text,
+    .btn-cont {
+        width: 75% !important;
+    }
+
+    .btn-cont {
+        margin-top: 1.5em;
     }
 
     #name-booking,
     #date {
         margin-bottom: 1rem !important;
+    }
+
+    .terms {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .terms p {
+        font-size: 0.8em;
+    }
+
+    .nl-text::before {
+        content: none;
+    }
+
+    .nl-text {
+        text-align: center;
+    }
+
+    .nl-text p {
+        margin-bottom: 1rem !important
+    }
+
+    #sm {
+        margin-top: 1em;
     }
 
     #about .btn-blue {
@@ -1089,7 +1147,7 @@ footer {
     #titles {
         align-items: center !important;
         padding-left: 0 !important;
-        padding-top: 6em;
+        padding-top: 8em;
         text-align: center;
     }
 
@@ -1117,49 +1175,17 @@ footer {
         height: 2px;
     }
 
+    #reservation {
+        padding-top: 0 !important;
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+        align-items: center !important;
+    }
+
     #reservation h2 {
-        font-size: 2.5em;
-    }
-
-    .reserve {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .reserve-text,
-    .btn-cont {
-        width: 75% !important;
-    }
-
-    .btn-cont {
-        margin-top: 1.5em;
-    }
-
-    .terms {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .terms p {
-        font-size: 0.8em;
-    }
-
-    .nl-text::before {
-        content: none;
-    }
-
-    .nl-text {
-        text-align: center;
-    }
-
-    .nl-text p {
-        margin-bottom: 1rem !important
-    }
-
-    #sm {
-        margin-top: 1em;
+       text-align: center !important;
+       padding-left: 0 !important;
+       padding-right: 0 !important;
     }
 
     #about {
@@ -1207,91 +1233,106 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    /* MENU PAGE */
     #coffee {
         margin: 2em 3em 0 3em;
     }
+
     #pastries {
         margin: 2em 3em 0 3em;
     }
+
     #drinks {
         padding: 3em;
     }
+
     .carta-img {
-        height: 10em;
-        width: 10em;
-        margin-top: 2em !important;
+        margin-top: 0.4em !important;
     }
-   /*  #brunch {
-        padding: 0 3em;
+
+    #carta-nav h4 {
+        padding: 0 0.3em;
     }
-    #toasts {
-        padding: 0 3em;
-    } */
+
+    #pastries .carta-precio h4 {
+        padding-left: 0 !important;
+    }
+    
+    .row-menu h3 {
+        white-space: wrap;
+        text-align: left;
+    }
+
     #tyb .row {
         width: 100%;
         padding: 0;
         margin: 0;
     }
-    .carta-img  {
-        margin-top: 0.4em;
-    }
-    #carta-nav {
-        flex-wrap: wrap;
-        width: 100%;
-        line-height: 0.5em;
+
+    #contact .hours {
+        flex-direction: column !important;
+        width: 90% !important;
+        padding: 1rem !important;
+        text-align: center !important;
     }
 
-    .carta-precio {
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-        justify-content:flex-start;
-    }
-    .carta-precio h3 {
-        margin-bottom: 8px;
-    }
-    .carta-precio h4 {
-        padding-left: 0.7em;
-    }
-    #pastries .carta-precio {
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-        justify-content:flex-start;
-    }
-    #pastries .carta-precio h3 {
-        margin-bottom: 8px;
-    }
-    #pastries .carta-precio h4 {
-        padding-left: 0.7em;
-    }
-    .row-menu h3 {
-        white-space: wrap;
-        text-align: left;
+    #faq {
+        padding: 4em;
     }
 }
 
 @media screen and (max-width: 500px) {
-    /* FAQ PAGE */
-    #faq {
-        background-color: var(--clr-light);
-        padding: 5em 3em;
+    #signUp h3 {
+        font-size: 2.5em;
+    }
+
+    #signUp p {
+        font-size: 0.8rem !important;
+    }
+
+    #reservation h2 {
+        font-size: 2em;
+     }
+
+    #carta-nav a {
+        padding: 0;
+    }
+
+    .carta-img {
+        height: 10em;
+        width: 10em;
+        margin-top: 2em !important;
+    }
+
+    #coffee .carta-precio,
+    #pastries .carta-precio {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .comida p {
+        text-align: justify !important;
+    }
+
+    #tyb {
+        padding: 3em;
+        margin: 0;
+    }
+
+    #toasts,
+    #brunch {
+        padding: 0 !important;
+    }
+
+    #faq-intro p {
+        font-size: 0.8em;
     }
 }
 
-/* @media screen and (max-width: 300px) {
-    #about .about-up {
-        padding-bottom: 0em;
-        padding-right: 4em;
+@media screen and (max-width: 470px) {
+    #titles h1,
+    #titles p,
+    #about .about-centro,
+    #faq-intro .btn-blue {
+        width: 80% !important;
     }
-    #about .about-down {
-        padding-top: 0em;
-        padding-left: 4em;
-    }
-
-    #about .about-img > img {
-        height: 12em;
-        width: 100%;
-    }
-  } */
+  }

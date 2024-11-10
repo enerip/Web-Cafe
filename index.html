@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <!-- <div id="carga" class="d-flex justify-content-center align-items-center w-100">
+    <div id="carga" class="d-flex justify-content-center align-items-center w-100">
       <div class="cup">
         <span class="steam"></span>
         <span class="steam"></span>
@@ -38,52 +38,50 @@
         <div class="cup-handle"></div>
       </div>
       <p id="porcentaje"></p>
-    </div> -->
+    </div>
 
     <div class="bg-video">
       <video src="media/video/video_bg.mp4" type="video/mp4" loop autoplay muted></video>
     </div>
 
     <header>
-      <div class="navContainer">
-        <nav id="menu">
-          <div class="logo">
-            <a href="#"><img id="logo-light" src="media/img/logo-blanco.png" alt=""></a>
-            <a href="#"><img id="logo-dark" src="media/img/logo-marron.png" alt="" style="display: none;"></a>
-          </div>
+      <nav class="navbar navbar-expand-lg fixed-top navContainer justify-content-center">
+        <div class="container-fluid mx-3">
+          <a class="navbar-brand" href="#"><img id="logo-light" src="media/img/logo-blanco.png" alt=""></a>
+          <a class="navbar-brand" href="#"><img id="logo-dark" src="media/img/logo-marron.png" alt="" style="display: none;"></a>
 
-          <div class="navMenu"> 
-            <i class="bi bi-list"></i>
-            <ul>
-              <li>
-                <a href="about.html">ABOUT US</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 navMenu w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
               </li>
-              <li>
-                <a href="menu.html">MENU</a>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">MENU</a>
               </li>
-              <li>
-                <a href="contact.html">CONTACT US</a>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
               </li>
-              <li>
-                <a href="faq.html">FAQ</a>
-              </li>
-              <li>
-                <i class="bi bi-x-lg"></i>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
               </li>
             </ul>
+
+            <div class="themeSearch justify-content-end">
+              <form class="d-flex align-items-center" id="search-form">
+                <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" style="display: none; width: 0;">
+                <button class="btn" id="search-icon" type="button">
+                  <i class="bi bi-search" style="font-size: 1.5rem; color: var(--clr-light);"></i>
+                </button>
+              </form>
+              <button id="theme-toggle"><i class="bi bi-sun-fill" style="font-size: 1.5rem; color: var(--clr-light);"></i></button>
+            </div>
           </div>
-  
-          <div class="themeSearch">
-            <form class="d-flex align-items-center" id="search-form">
-              <input class="form-control ms-2" id="search-input" type="search" placeholder="Search" style="display: none; width: 0;">
-              <button class="btn" id="search-icon" type="button">
-                <i class="bi bi-search" style="font-size: 1.5rem; color: var(--clr-light);"></i>
-              </button>
-            </form>
-            <button id="theme-toggle"><i class="bi bi-sun-fill" style="font-size: 1.5rem; color: var(--clr-light);"></i></button>
-          </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
 
       <div id="titles" class="w-100 d-flex flex-column justify-content-center">
         <h1 class="w-50">WELCOME TO AROMA CAFÉ</h1>
@@ -126,29 +124,29 @@
       <h2 class="pb-4">BEST SELLERS</h2>
       <div class="container text-center">
         <div class="row d-flex justify-content-center">
-          <div class="col-12 col-md-4">
+          <div class="col-11 col-md-4">
             <div class="card card-best">
               <img src="media/img/home/vanilla_latte.jpg" class="card-img-top" alt="...">
               <div class="card-body p-4">
-                <h3 class="fs-4 fs-md-2">VANILLA MAPLE LATTE</h3>
+                <h3 class="fs-2">VANILLA MAPLE LATTE</h3>
                 <p class="card-text">Smooth and creamy latte made with our house espresso, steamed milk, vanilla syrup and a hint of maple.</p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-11 col-md-4">
             <div class="card card-best">
               <img src="media/img/home/almond_croissant.jpg" class="card-img-top" alt="...">
               <div class="card-body p-4">
-                <h3 class="fs-4 fs-md-2">ALMOND CROISSANT</h3>
+                <h3 class="fs-2">ALMOND CROISSANT</h3>
                 <p class="card-text">Freshly baked flaky croissant filled with rich almond paste, topped with toasted almonds and powdered sugar.</p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-11 col-md-4">
             <div class="card card-best">
               <img src="media/img/home/pumpkin_spice.jpg" class="card-img-top" alt="...">
               <div class="card-body p-4">
-                <h3 class="fs-4 fs-md-2">PUMPKIN SPICE MOCHA</h3>
+                <h3 class="fs-2">PUMPKIN SPICE MOCHA</h3>
                 <p class="card-text"> Our limited-time autumn delight that blends espresso, steamed milk, chocolate and a pumpkin spice mix.</p>
               </div>
             </div>
@@ -197,7 +195,7 @@
       </div>
     </section>  
     
-    <section id="reservation" class="d-flex flex-column w-100 w-xl-75 pt-3 px-5 pb-5">
+    <section id="reservation" class="d-flex flex-column w-75 pt-3 px-5 pb-5">
       <h2 class="title-1 text-start mb-3 ps-2">Reserve Your Spot For</h2>
       <h2 class="title-2 text-end mb-3 pe-2">Any Special Occasions</h2>
       <div class="container reserve mt-3 p-0">
@@ -218,7 +216,7 @@
 
             <div class="modal-header pb-0 border-bottom-0 d-flex align-items-start justify-content-between">
               <h1 class="modal-title" id="bookingModalLabel">BOOKING</h1>
-              <button type="button" class="btn-close pruebaBtn" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
@@ -273,7 +271,7 @@
     </section>
 
     <footer class="d-flex flex-column align-items-center p-5">
-      <div class="container w-100 w-xl-75">
+      <div class="container w-75">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-8 terms py-4 px-0">
             <p class="mb-2">FAQS</p>
