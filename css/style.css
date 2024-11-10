@@ -423,6 +423,7 @@ header {
     font-family: var(--font-body);
     font-weight: 600;
     color: var(--clr-dark);
+    overflow: hidden; 
 }
 
 .reserve-text {
@@ -566,9 +567,11 @@ footer {
 
 #about .about-up {
     padding-bottom: 8em;
+    overflow: hidden;
 }
 #about .about-down {
     padding-top: 8em;
+    overflow: hidden;
 }
 
 #about .about-centro {
